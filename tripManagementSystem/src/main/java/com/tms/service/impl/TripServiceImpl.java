@@ -2,9 +2,10 @@ package com.tms.service.impl;
 
 import com.tms.dao.TripDao;
 import com.tms.exception.TripNotFoundException;
-import com.tms.model.Fleet;
-import com.tms.model.MasterData;
+
 import com.tms.model.Trip;
+import com.tms.model.dto.Fleet;
+import com.tms.model.dto.MasterData;
 import com.tms.service.TripService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
