@@ -1,0 +1,47 @@
+TT till may 24 - this sheet contains the fleet details master data - FMS?
+
+Harpreet singh sabharwal - how to filter this sheet for trip calculations - TMS? what should be there in the trip master data, not trip table(details coming from frontend) 
+
+trip master data
+fleet master data
+trip table - data stored from frontend and calculated fare
+
+keeping one database for all, with multiple tables - fleet -> fleet details, freight rate, trip -> trip details with calculation of fare 
+batch database call
+add swagger
+add postman collection
+add exception handling
+add logging
+* learn cache
+interaction betwwen two microservices - fleet and trip
+write the logic for calculation
+freight rate stored in database, where?
+
+
+calculation:
+
+standard KM * 2 = RTKM
+capacity of fleet * RTKM * freight rate = fare of each trip
+
+standard km - can be found in "Harpreet singh sabharwal" trip sheet?
+capacity of fleet - "TT till may 24" sheet - truck master data?
+the rate of trip for per KL and KM - taken from screenshot - that should be stored in freight rate table? 
+
+
+ex:
+	TT - HR37B0021
+	capacity - 24.00 
+	standard km - 394
+	RTKM - 394 * 2 = 788
+	fare of trip : 
+		upto 49RTKM for 24KL = 123(per KL) * 24KL  = 2952/-
+		for next (788RTKM - 49RTKM = 739RTKM) for 24KL = 2.1301(per KLKM) * 739RTKM * 24KL = 37,779.45
+		total trip fare - 40,731.45/- -> this should be entered against  each trip in the TMS (trip table)
+		
+		
+		
+will freight rate be changed?
+
+
+
+
