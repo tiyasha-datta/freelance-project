@@ -27,7 +27,7 @@ public class Fleet {
     @Column(name = "Terminal")
     private String terminal;
     @Column(name = "Total Capacity")
-    private String totalCapacity;
+    private double totalCapacity;
     @Column(name = "Dealer/Transporter")
     private String dealerTransporter;
     @Column(name = "Ownership")
