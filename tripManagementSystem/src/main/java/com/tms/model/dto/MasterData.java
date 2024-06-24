@@ -1,4 +1,4 @@
-package com.tms.model;
+package com.tms.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -6,31 +6,31 @@ import lombok.Data;
 @Data
 public class MasterData {
 
-    @JsonProperty("date_effective")
+    @JsonProperty("dateEffective")
     private String dateEffective;
 
-    @JsonProperty("rate_12_14_klkm")
+    @JsonProperty("rate1214Klkm")
     private double rate1214Klkm;
 
-    @JsonProperty("rate_18_20_klkm")
+    @JsonProperty("rate1820Klkm")
     private double rate1820Klkm;
 
-    @JsonProperty("rate_22_25_klkm")
+    @JsonProperty("rate2225Klkm")
     private double rate2225Klkm;
 
-    @JsonProperty("rate_28_29_klkm")
+    @JsonProperty("rate2829Klkm")
     private double rate2829Klkm;
 
-    @JsonProperty("fdz_rate_12_kl")
+    @JsonProperty("fdzRate12Kl")
     private double fdzRate12Kl;
 
-    @JsonProperty("fdz_rate_18_20_kl")
+    @JsonProperty("fdzRate1820Kl")
     private double fdzRate1820Kl;
 
-    @JsonProperty("fdz_rate_22_25_kl")
+    @JsonProperty("fdzRate2225Kl")
     private double fdzRate2225Kl;
 
-    @JsonProperty("fdz_rate_28_29_kl")
+    @JsonProperty("fdzRate2829Kl")
     private double fdzRate2829Kl;
 
     @JsonProperty("active")
